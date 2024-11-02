@@ -1,0 +1,96 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "Peter_Horsfall"
+    },
+    "motivations": {
+      "@value": "I want to be a DRep because I believe in the principles of decentralisation and community empowerment at the heart of the Cardano ecosystem. My experience as a legal operational consultant has given me skills in governance and collaboration, essential for effectively representing our community.\n\nHaving worked with diverse stakeholders in the finance sector, I understand the importance of transparency and trust in decision-making. Personally, my passion for blockchain and Web3 drives my commitment to creating a more equitable future. I’m excited about the opportunity to contribute my insights to shape Cardano’s direction and ensure our community’s voice is influential."
+    },
+    "objectives": {
+      "@value": "As a DRep, I believe in the power of blockchain to foster a decentralised, transparent, and inclusive future. My goal is to enhance participation in governance by bridging gaps between stakeholders and decision-makers. I aim to promote innovative solutions that improve user experience and support the growth of Cardano. Through collaboration and transparency, I strive to inspire confidence in our community and drive positive change for a better blockchain future."
+    },
+    "paymentAddress": {
+      "@value": "addr1q95npx6h4vjd5y7grjflfwaftg8wsqtaj92jvp98tk53kdxt53xe4qczd7fj7g0w2qntfa5h4ekpd4dcq9vm2zawjpeqq2nvfc"
+    },
+    "qualifications": {
+      "@value": "Legal expertise and insights into governance and regulatory compliance. Blockchain knowledge, particularly within the Cardano ecosystem. "
+    },
+    "references": [
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "X"
+        },
+        "uri": {
+          "@value": "https://x.com/blockchain_pete"
+        }
+      },
+      {
+        "@type": "Identity",
+        "label": {
+          "@value": "LinkedIN"
+        },
+        "uri": {
+          "@value": "https://www.linkedin.com/in/peterhorsfall/"
+        }
+      }
+    ]
+  }
+}
