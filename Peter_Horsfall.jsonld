@@ -28,7 +28,14 @@
         },
         "paymentAddress": "CIP119:paymentAddress",
         "givenName": "CIP119:givenName",
-        "image": "CIP119:image",
+        "image": {
+          "@id": "CIP119:image",
+          "@context": {
+            "ImageObject": "https://schema.org/ImageObject",
+            "contentUrl": "CIP119:contentUrl",
+            "sha256": "CIP119:sha256"
+          }
+        },
         "objectives": "CIP119:objectives",
         "motivations": "CIP119:motivations",
         "qualifications": "CIP119:qualifications",
@@ -52,44 +59,28 @@
     }
   },
   "authors": [],
-  "hashAlgorithm": {
-    "@value": "blake2b-256"
-  },
+  "hashAlgorithm": "blake2b-256",
   "body": {
-    "doNotList": false,
-    "givenName": {
-      "@value": "Peter_Horsfall"
+    "givenName": "Peter_Horsfall",
+    "image": {
+      "@type": "ImageObject",
+      "contentUrl": "",
+      "sha256": "58abb4afa24ec2d685e1ab08cc4f884dcb3de78bc9d62fdcdeb6ac795db45e00"
     },
-    "motivations": {
-      "@value": "I want to be a DRep because I believe in decentralisation and empowering the Cardano community. With experience as a software company founder and over a decade in finance and legal, I bring strong governance and collaboration skills to represent our community effectively.\n\nI'm dedicated to promoting fairness and ensuring our community’s voice plays a key role in shaping Cardano’s future."
-    },
-    "objectives": {
-      "@value": "As a DRep and constitutional delegate representing the vibrant Sydney, Australia community, I proudly voted \"yes\" and signed the Cardano constitution in Argentina, believing in blockchain's power to create a decentralised, transparent, and inclusive future. My focus is on boosting participation in governance—starting locally and extending globally—by connecting stakeholders with decision-makers across our ecosystem."
-    },
-    "paymentAddress": {
-      "@value": "addr1q95npx6h4vjd5y7grjflfwaftg8wsqtaj92jvp98tk53kdxt53xe4qczd7fj7g0w2qntfa5h4ekpd4dcq9vm2zawjpeqq2nvfc"
-    },
-    "qualifications": {
-      "@value": "Legal expertise with a focus on governance and regulatory compliance, combined with in-depth knowledge of the Cardano ecosystem."
-    },
+    "motivations": "The Cardano community has profoundly shaped my life, inspiring me to dedicate as much time as possible to this world-changing technology. Drawing on my deep expertise in finance, emerging tech, and legal operations, I'll actively promote the ecosystem across my networks, forging key relationships to drive growth and adoption. Known as the \"anti-establishment within the establishment,\" I bring a fresh, principled perspective to governance.",
+    "objectives": "I aim to blend traditional finance with decentralised finance for seamless, everyday 'finance', while raising Cardano governance awareness in Oceania. Drawing on my finance and tech background, I'll champion \"common sense principles\" in voting on all governance and treasury actions.",
+    "paymentAddress": "addr1q95npx6h4vjd5y7grjflfwaftg8wsqtaj92jvp98tk53kdxt53xe4qczd7fj7g0w2qntfa5h4ekpd4dcq9vm2zawjpeqq2nvfc",
+    "qualifications": "> Finance Specialist with 10+ Years at Australia's leading business bank (NAB) in Legal Operations and Emerging Tech\n> Founder and Director of Executive Portlets Pty Ltd\n> Cardano Contributor since 2021\n> DRep since 2024\n> Represented Sydney in signing the Cardano Constitution in Argentina.",
     "references": [
       {
         "@type": "Link",
-        "label": {
-          "@value": "X"
-        },
-        "uri": {
-          "@value": "https://x.com/blockchain_pete"
-        }
+        "label": "X",
+        "uri": "https://x.com/blockchain_pete"
       },
       {
         "@type": "Identity",
-        "label": {
-          "@value": "LinkedIN"
-        },
-        "uri": {
-          "@value": "https://www.linkedin.com/in/peterhorsfall/"
-        }
+        "label": "LinkedIN",
+        "uri": "https://www.linkedin.com/in/peterhorsfall/"
       }
     ]
   }
