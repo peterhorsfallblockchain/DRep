@@ -1,0 +1,87 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": {
+          "@id": "CIP119:image",
+          "@context": {
+            "ImageObject": "https://schema.org/ImageObject",
+            "contentUrl": "CIP119:contentUrl",
+            "sha256": "CIP119:sha256"
+          }
+        },
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "givenName": "Peter_Horsfall",
+    "image": {
+      "@type": "ImageObject",
+      "contentUrl": "",
+      "sha256": "58abb4afa24ec2d685e1ab08cc4f884dcb3de78bc9d62fdcdeb6ac795db45e00"
+    },
+    "motivations": "The Cardano community has profoundly shaped my life, inspiring me to dedicate as much time as possible to this world-changing technology. Drawing on my deep expertise in finance, emerging tech, and legal operations, I'll actively promote the ecosystem across my networks, forging key relationships to drive growth and adoption. Known as the \"anti-establishment within the establishment,\" I bring a fresh, principled perspective to governance.",
+    "objectives": "I aim to blend traditional finance with decentralised finance for seamless, everyday 'finance', while raising Cardano governance awareness in Oceania. Drawing on my finance and tech background, I'll champion \"common sense principles\" in voting on all governance and treasury actions.",
+    "paymentAddress": "addr1q95npx6h4vjd5y7grjflfwaftg8wsqtaj92jvp98tk53kdxt53xe4qczd7fj7g0w2qntfa5h4ekpd4dcq9vm2zawjpeqq2nvfc",
+    "qualifications": "> Finance Specialist with 10+ Years at Australia's leading business bank (NAB) in Legal Operations and Emerging Tech\n> Founder and Director of Executive Portlets Pty Ltd\n> Cardano Contributor since 2021\n> DRep since 2024\n> Represented Sydney in signing the Cardano Constitution in Argentina.",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "X",
+        "uri": "https://x.com/blockchain_pete"
+      },
+      {
+        "@type": "Identity",
+        "label": "LinkedIN",
+        "uri": "https://www.linkedin.com/in/peterhorsfall/"
+      }
+    ]
+  }
+}
